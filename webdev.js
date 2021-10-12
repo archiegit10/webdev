@@ -87,3 +87,26 @@ if(age >= 18 && age <= 85){
 }
 result = age >= 50 ? "50 above" : "50 below";
 console.log(result)
+
+console.log("------------- task 6")
+darthVader = {
+    allegiance : "empire",
+    weapon : "lightsabre",
+    sith: true
+};
+console.log(darthVader);
+
+console.log(`Darth vaders alligence is to the ${darthVader.allegiance}`);
+console.log(`Darth vaders weapon is the ${darthVader.weapon}`);
+console.log(`darth vader is a sith, this is ${darthVader.sith}`);
+console.log(`darth vader is a jedi, this is ${!darthVader.sith}`);
+
+let myArray = ["hello", "everyone"];
+console.log(myArray.length);
+myArray.push("good morning","good afternoon","good evening")
+console.log(myArray.length);
+myArray.shift(myArray)
+console.log(myArray.length);
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}
