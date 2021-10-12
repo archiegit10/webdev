@@ -110,3 +110,27 @@ console.log(myArray.length);
 for (let i = 0; i < myArray.length; i++) {
     console.log(myArray[i]);
 }
+
+console.log("------------------fizz  buzz");
+for (let i = 0; i <= 100; i++) {
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log(`${i} fizz buzz`)
+    } else if(i % 3 == 0){
+        console.log(`${i} fizz `)
+    } else if(i % 5 == 0){
+        console.log(`${i}  buzz`)
+    } else {
+        console.log(i)
+    }
+}
+
+console.log("----------------bottles of beer")
+for(let i = 99; i >= 0; i = i - 1){
+    console.log(`${i} bottles of beer on the wall, ${i} bottles of beer`)
+    if(i > 1){
+        console.log(`Take one pass it down, ${(i - 1)} bottles of beer on the wall`)
+    } else if (i < 1){
+        console.log(`No more bottles of beer on the wall, no more bottles of beer.
+        Go to the store and buy some more, 99 bottles of beer on the wall.`)
+    }
+}
