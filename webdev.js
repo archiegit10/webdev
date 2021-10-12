@@ -22,3 +22,53 @@ let totalMoney = 4000;
 let moneyPaidSoFar = 2348;
 let totalLeftToPay;
 console.log(`the total bill is £${totalMoney} with £${moneyPaidSoFar} paid so far, and £${totalLeftToPay} left to pay`)
+
+//task 4
+a = 100
+for(a = 100; a <= 100; a++){
+    console.log(`a= ${a}`)
+}
+
+b = 100
+for(b <=200; b <= 200; b++){
+    if(b % 2 ==0){
+        console.log("-")
+        b++
+    } else {
+        console.log("*")
+        b++
+    }
+}
+console.log("---------------------")
+for( n = 0; n < 10; n++){
+    for (let i = 0; i < 10; i++) {
+        console.log(i);
+    }
+}
+console.log("---------------------")
+
+now = new Date();
+day = now.getDay();
+switch(day){
+    case 0: 
+        console.log("its sunday");
+        break;
+    case 1:
+        console.log("its monday ");
+        break;
+    case 2:
+        console.log("its tuesday");
+        break; 
+    case 3:
+        console.log("its wednesday my dude");
+        break;   
+    case 4:
+        console.log("its thursday");
+        break;
+    case 5:
+        console.log("its friday");
+        break;
+    case 6:
+        console.log("its saturday");
+        break;
+}
