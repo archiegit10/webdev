@@ -72,3 +72,18 @@ switch(day){
         console.log("its saturday");
         break;
 }
+console.log("----------------- task 5")
+let strictA = true;
+let strictB = 1;
+console.log(strictA == strictB); //true
+console.log(strictA === strictB); // false
+console.log(strictA != strictB); // false
+console.log(strictA !== strictB); //true
+age = 5;
+if(age >= 18 && age <= 85){
+    console.log("above 18 and below 85: " + age)
+} else{
+    console.log(age+" is below 18 or above 85")
+}
+result = age >= 50 ? "50 above" : "50 below";
+console.log(result)
