@@ -79,15 +79,15 @@ console.log(strictA == strictB); //true
 console.log(strictA === strictB); // false
 console.log(strictA != strictB); // false
 console.log(strictA !== strictB); //true
-age = 5;
-if(age >= 18 && age <= 85){
+//let age = 5;
+/*if(age >= 18 && age <= 85){
     console.log("above 18 and below 85: " + age)
 } else{
     console.log(age+" is below 18 or above 85")
 }
 result = age >= 50 ? "50 above" : "50 below";
 console.log(result)
-
+*/
 console.log("------------- task 6")
 darthVader = {
     allegiance : "empire",
@@ -156,3 +156,23 @@ assess()
   }
   doSomething();
   cannot access a before initalisting */ 
+  console.log("functions ----------------")
+  function sub(num1, num2){
+      console.log( num1 - num2)
+  }
+  let num1= 5
+  let num2= 3
+  sub(5,3)
+
+  let name = "archie"
+  let age = "22"
+  let gender = "male"
+
+  function welcome(name, age,gender){
+      console.log(`My name is ${name}, I am ${age} years old and of gender ${gender}`)
+  }
+
+  welcome(name,age,gender)
+
+  powerUp = (n1,n2) => Math.pow(n1,n2);
+  console.log(powerUp(3,2))
