@@ -134,3 +134,25 @@ for(let i = 99; i >= 0; i = i - 1){
         Go to the store and buy some more, 99 bottles of beer on the wall.`)
     }
 }
+console.log("------------- scope task")
+function assess(){
+    let x = 'foo'
+    if(x == 'foo'){
+       let y = 'bar' 
+       console.log(y)
+    }
+    console.log(x) // x
+    //console.log(y) // reference error
+}
+
+assess()
+/*function doSomething() {
+    console.log(a);
+    console.log(foo());
+    let a = 1;
+    function foo() {
+      return 2;
+    }
+  }
+  doSomething();
+  cannot access a before initalisting */ 
