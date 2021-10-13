@@ -1,4 +1,4 @@
-const history = []
+const historyArr = [];
 
 function display(value){
     document.getElementById("result").value += value;
@@ -7,18 +7,21 @@ function display(value){
 function solve(){
     let x = document.getElementById("result").value;
     let y = eval(x);
-    let historyStr = `${x}=${y}`
+    let historyStr = `${x}=${y}`;
     document.getElementById("result").value = y;
-    history.unshift(historyStr)
-    document.getElementById("historyDiv").innerHTML = history;
+    historyArr.unshift(historyStr);
+    document.getElementById("historyDiv").innerHTML = historyArr;
+    console.log(`Solve pressed: ${historyStr}`);
 }
 
 function clearDisplay(){
     let e = "";
+    console.log("clear display pressed");
     document.getElementById("result").value = e;
 }
 
 function clearHistory(){
-    const history = []
-    document.getElementById("historyDiv").innerHTML = ""
+    console.log("clear history pressed")
+    let historyArr = [];
+    document.getElementById("historyDiv").innerHTML = ""; 
 }
